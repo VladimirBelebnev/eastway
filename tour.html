@@ -1,0 +1,648 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="./css/main.css">
+        <title>Eastway</title>
+    </head>
+
+    <body>
+        <header class="header">
+            <div class="container">
+                <div class="header__wrap flex">
+                    <a class="header__logo" href="/">
+                        <img src="./img//svg/logo-1.svg" alt="logo">
+                    </a>
+                    <ul class="header__nav flex">
+                        <li class="header__link">
+                            <a href="#">Туры</a>
+                        </li>
+                        <li class="header__link">
+                            <a href="#">О компании</a>
+                        </li>
+                        <li class="header__link">
+                            <a href="#">Вакансии</a>
+                        </li>
+                        <li class="header__link">
+                            <a href="#">Офисы продаж</a>
+                        </li>
+                        <li class="header__link">
+                            <a href="#">Блог</a>
+                        </li>
+                    </ul>
+                    <div class="header__contact flex">
+                        <div class="header__lang flex">
+                            <a class="lang__item active" href="./">RU</a>
+                            <span>/</span>
+                            <a class="lang__item" href="/">UZ</a>
+                        </div>
+                        <span class="header__line"></span>
+                        <div class="contact__block">
+                            <a class="phone" href="tel:84950000000">8 495 000 00 00</a>
+                            <a class="mail" href="mailto:info@centralasia.travel">info@centralasia.travel</a>
+                        </div>
+                        <div class="header__social">
+                            <a href="./">
+                                <img src="./img/svg/telegram.svg" alt="telegram">
+                            </a>
+                            <a href="./">
+                                <img src="./img/svg/whatsApp.svg" alt="whatsApp">
+                            </a>
+                        </div>
+                    </div>
+                    <button class="burger">
+                        <span class="burger-line top-line"></span>
+                        <span class="burger-line mid-line"></span>
+                        <span class="burger-line bottom-line"></span>
+                    </button>
+                </div>
+            </div>
+        </header>
+
+        <div class="mobile-menu flex hidden">
+            <ul class="header__nav flex mobile-nav">
+                <li class="header__link">
+                    <a href="#">Туры</a>
+                </li>
+                <li class="header__link">
+                    <a href="#">О компании</a>
+                </li>
+                <li class="header__link">
+                    <a href="#">Вакансии</a>
+                </li>
+                <li class="header__link">
+                    <a href="#">Офисы продаж</a>
+                </li>
+                <li class="header__link">
+                    <a href="#">Блог</a>
+                </li>
+            </ul>
+            <div class="contact__block">
+                <a class="phone" href="tel:84950000000">8 495 000 00 00</a>
+                <a class="mail" href="mailto:info@centralasia.travel">info@centralasia.travel</a>
+            </div>
+            <div class="header__social">
+                <a href="./">
+                    <img src="./img/svg/telegram.svg" alt="telegram">
+                    <img src="./img/svg/whatsApp.svg" alt="whatsApp">
+                </a>
+            </div>
+        </div>
+
+        <section class="hero-section"
+            style="background: url('./img/main-hero.jpg'); background-repeat: no-repeat; background-size: 100% 100%;">
+            <div class="container">
+                <div class="hero-section__wrap">
+                    <div class="hero-section__breadcrumbs">
+                        <a href="#">Главная</a>
+                        <span>/</span>
+                        <a href="#">Туры</a>
+                        <span>/</span>
+                        <a href="#">Джидджа</a>
+                    </div>
+                    <h1 class="hero__title hero-section__title" style="display: flex; align-items: center; gap: 12px;">
+                        Ташкент <img class="hero__arrow" src="./img/svg/big-arrow.svg" alt="arrow">
+                        Джидда</h1>
+                    <span class="hero__dates">12.12.2012 – 14.12.2012</span>
+                    <div class="hero-section__line"></div>
+                </div>
+            </div>
+        </section>
+
+        <section class="description wow animate__animated animate__fadeIn">
+            <div class="container">
+                <div class="description__wrap">
+                    <div class="item">
+                        <div class="offer__wrap"
+                            style="background: url('../img/offer-item.jpg'); background-repeat: no-repeat; background-size: 100% 100%; border-radius: 10px; padding: 15px;">
+                            <div class="item__content">
+                                <div class="item__header">
+                                    <div class="item__cities">
+                                        <span>Ташкент</span>
+                                        <img src="./img/svg/two-arrow.svg" alt="arrows">
+                                        <span>Джидда</span>
+                                    </div>
+                                    <p class="item__days">Осталось 5 дней</p>
+                                </div>
+                                <div class="item__benefits">
+                                    <div class="item__benefit">
+                                        <img src="./img/svg/hot-1.svg" alt="benefits">
+                                        <span>Перелет туда и обратно</span>
+                                    </div>
+                                    <div class="item__benefit">
+                                        <img src="./img/svg/hot-2.svg" alt="benefits">
+                                        <span>Виза и страховка</span>
+                                    </div>
+                                    <div class="item__benefit">
+                                        <img src="./img/svg/hot-3.svg" alt="benefits">
+                                        <span>Отель 5 звезд</span>
+                                    </div>
+                                    <div class="item__benefit">
+                                        <img src="./img/svg/hot-4.svg" alt="benefits">
+                                        <span>Трех разовое питание</span>
+                                    </div>
+                                    <div class="item__benefit">
+                                        <img src="./img/svg/hot-5.svg" alt="benefits">
+                                        <span>Групповой гид, с опытом</span>
+                                    </div>
+                                    <div class="item__benefit">
+                                        <img src="./img/svg/hot-6.svg" alt="benefits">
+                                        <span>Вода «Зам-Зам»</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="description__block">
+                        <h2 class="title">Описание тура</h2>
+                        <p class="description__descr">Lorem ipsum dolor sit amet consectetur. Malesuada vulputate enim
+                            curabitur sit. Amet pretium ultrices amet nisl. Massa
+                            egestas eget dignissim mattis urna feugiat eleifend ipsum nunc. Sed euismod leo sed sit
+                            malesuada integer. Amet semper
+                            libero turpis aliquam tellus eget.
+                            Gravida consectetur donec habitasse viverra erat aliquam eu at. A scelerisque eu nulla
+                            pretium. Justo a amet vitae
+                            egestas sit neque duis nulla. Sagittis eu pellentesque ipsum egestas sed nec ullamcorper.
+                            Egestas ridiculus placerat
+                            pulvinar condimentum ut consequat massa.</p>
+                        <div class="item__bottom">
+                            <a href="#" class="item__program">12.12.2012 – 14.12.2012</a>
+                            <div class="price__block">
+                                <span class="item__day">2 дня</span>
+                                <p class="item__price"><span>$ 1 800</span>/чел</p>
+                            </div>
+                            <button class="item__btn btn">Забронировать</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="info wow animate__animated animate__slideInUp">
+            <div class="container">
+                <div class="info__grid">
+                    <div class="info__item">
+                        <h2 class="title">Отель</h2>
+                        <div class="info__wrap">
+                            <div class="info__img">
+                                <img src="./img/tour-1.jpg" alt="img">
+                                <a href="#" class="info__hotel">Фото отеля <img src="./img/svg/right-arrow.svg"
+                                        alt="arrow">
+                                </a>
+                            </div>
+                            <div class="info__block">
+                                <h4 class="info__name">Название отеля</h4>
+                                <p class="info__descr">Lorem ipsum dolor sit amet consectetur. Quis pulvinar maecenas
+                                    nullam habitant non. Morbi in in volutpat fringilla
+                                    pellentesque. Morbi duis tortor vel nullam sem. Consectetur aenean cras mi
+                                    vulputate.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="info__item">
+                        <h2 class="title">Питание</h2>
+                        <div class="info__wrap">
+                            <div class="info__img">
+                                <img src="./img/tour-2.jpg" alt="img">
+                            </div>
+                            <div class="info__block">
+                                <h4 class="info__name">Трех разовое питание</h4>
+                                <p class="info__descr">Lorem ipsum dolor sit amet consectetur. Quis pulvinar maecenas
+                                    nullam habitant non. Morbi in in volutpat fringilla
+                                    pellentesque. Morbi duis tortor vel nullam sem. Consectetur aenean cras mi
+                                    vulputate.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="info__item">
+                        <h2 class="title">Визы и документы</h2>
+                        <div class="info__wrap">
+                            <div class="info__img">
+                                <img src="./img/tour-3.jpg" alt="img">
+                            </div>
+                            <div class="info__block">
+                                <h4 class="info__name">Страхование и визы</h4>
+                                <p class="info__descr">Lorem ipsum dolor sit amet consectetur. Quis pulvinar maecenas
+                                    nullam habitant non. Morbi in in volutpat fringilla
+                                    pellentesque. Morbi duis tortor vel nullam sem. Consectetur aenean cras mi
+                                    vulputate.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="info__item">
+                        <h2 class="title">Трасфер</h2>
+                        <div class="info__wrap">
+                            <div class="info__img">
+                                <img src="./img/tour-4.jpg" alt="img">
+                            </div>
+                            <div class="info__block">
+                                <h4 class="info__name">Трансферы на весь тур</h4>
+                                <p class="info__descr">Lorem ipsum dolor sit amet consectetur. Quis pulvinar maecenas
+                                    nullam habitant non. Morbi in in volutpat fringilla
+                                    pellentesque. Morbi duis tortor vel nullam sem. Consectetur aenean cras mi
+                                    vulputate.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="tour">
+            <div class="container">
+                <h2 class="tour__title title">Программа тура</h2>
+                <div class="tour__column">
+                    <div class="tour__item wow animate__animated animate__slideInUp">
+                        <span class="tour__day">День 1</span>
+                        <div class="tour__wrap">
+                            <div class="tour__header">
+                                <div class="header__block">
+                                    <span class="header__time">12:00</span>
+                                    <p class="header__name">Вылет из аэропорта
+                                        Ташкента</p>
+                                </div>
+                                <span class="header__line"></span>
+                                <div class="header__block">
+                                    <span class="header__time">12:00</span>
+                                    <p class="header__name">Вылет из аэропорта
+                                        Ташкента</p>
+                                </div>
+                                <span class="header__line"></span>
+                                <div class="header__block">
+                                    <span class="header__time">12:00</span>
+                                    <p class="header__name">Вылет из аэропорта
+                                        Ташкента</p>
+                                </div>
+                                <span class="header__line"></span>
+                                <div class="header__block">
+                                    <span class="header__time">12:00</span>
+                                    <p class="header__name">Вылет из аэропорта
+                                        Ташкента</p>
+                                </div>
+                            </div>
+                            <div class="tour__content">
+                                <div class="tour__slider swiper">
+                                    <div class="swiper-wrapper">
+                                        <div class="swiper-slide">
+                                            <img src="./img/tour-slide.jpg" alt="img">
+                                        </div>
+                                        <div class="swiper-slide">
+                                            <img src="./img/tour-slide.jpg" alt="img">
+                                        </div>
+                                        <div class="swiper-slide">
+                                            <img src="./img/tour-slide.jpg" alt="img">
+                                        </div>
+                                        <div class="swiper-slide">
+                                            <img src="./img/tour-slide.jpg" alt="img">
+                                        </div>
+                                        <div class="swiper-slide">
+                                            <img src="./img/tour-slide.jpg" alt="img">
+                                        </div>
+                                    </div>
+                                    <div class="tour__nav">
+                                        <div class="tour__prev"><img src="./img/svg/tour-prev.svg" alt="prev"></div>
+                                        <div class="tour__pagination"></div>
+                                        <div class="tour__next"><img src="./img/svg/tour-next.svg" alt="next"></div>
+                                    </div>
+                                </div>
+                                <div class="tour__text">
+                                    Вылет из Ташкента рейсом HY335 (Uzbekistan Airways) в указанное время на
+                                    ваучере-авиабилете.
+                                    Время вылета из Ташкента в Джидда Время вылета и прилета предварительно
+                                    <ul>
+                                        <li>8 Декабря, из Ташкента 18:50. Прилет в Джидда 22:20</li>
+                                        <li>15 Декабря, из Ташкента 18:50. Прилет в Джидда 22:20</li>
+                                        <li>22 Декабря, из Ташкента 18:50. Прилет в Джидда 22:20</li>
+                                        <li>29 Декабря, из Ташкента 18:50. Прилет в Джидда 22:20</li>
+                                    </ul>
+                                    Прилет в город Джидда. Встреча в аэропорту. Трансфер в город Медину (6 часов), по
+                                    дороге
+                                    каждому паломнику будет
+                                    предоставлен ланч бокс. Заселение в отель BOSPHORUS GRAND AL SAFI 4* на базе 2-х
+                                    разового
+                                    питания завтраки и ужины.
+                                    <ul>
+                                        <li>Современный отель</li>
+                                        <li>300м от Масджид ан-Набави "Мечеть Пророка"</li>
+                                        <li>2-х разовое питание</li>
+                                        <li>Шаговая доступность от достопримечательностей</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <img class="tour__line" src="./img/svg/tour-line.svg">
+                    <div class="tour__item wow animate__animated animate__slideInUp">
+                        <span class="tour__day">День 2</span>
+                        <div class="tour__wrap">
+                            <div class="tour__header">
+                                <div class="header__block">
+                                    <span class="header__time">12:00</span>
+                                    <p class="header__name">Вылет из аэропорта
+                                        Ташкента</p>
+                                </div>
+                                <span class="header__line"></span>
+                                <div class="header__block">
+                                    <span class="header__time">12:00</span>
+                                    <p class="header__name">Вылет из аэропорта
+                                        Ташкента</p>
+                                </div>
+                                <span class="header__line"></span>
+                                <div class="header__block">
+                                    <span class="header__time">12:00</span>
+                                    <p class="header__name">Вылет из аэропорта
+                                        Ташкента</p>
+                                </div>
+                                <span class="header__line"></span>
+                                <div class="header__block">
+                                    <span class="header__time">12:00</span>
+                                    <p class="header__name">Вылет из аэропорта
+                                        Ташкента</p>
+                                </div>
+                            </div>
+                            <div class="tour__content">
+                                <div class="tour__text mono">Lorem ipsum dolor sit amet consectetur. Ullamcorper diam
+                                    dui
+                                    suspendisse fusce turpis feugiat ut in dolor. Neque tellus
+                                    volutpat ipsum ut montes integer varius fringilla integer. Est pharetra cursus quis
+                                    est
+                                    lorem vitae enim turpis nam.
+                                    Pulvinar vehicula iaculis etiam quam nulla vitae sollicitudin. Vel amet facilisi
+                                    aliquam
+                                    rhoncus lacinia semper sed
+                                    eget. In faucibus duis massa velit eu eget cursus. Amet sed vulputate tellus neque
+                                    eu
+                                    ornare pharetra eget odio.
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <img class="tour__line" src="./img/svg/tour-line.svg">
+                    <div class="tour__item wow animate__animated animate__slideInUp">
+                        <span class="tour__day">День 3</span>
+                        <div class="tour__wrap">
+                            <div class="tour__header">
+                                <div class="header__block">
+                                    <span class="header__time">12:00</span>
+                                    <p class="header__name">Вылет из аэропорта
+                                        Ташкента</p>
+                                </div>
+                                <span class="header__line"></span>
+                                <div class="header__block">
+                                    <span class="header__time">12:00</span>
+                                    <p class="header__name">Вылет из аэропорта
+                                        Ташкента</p>
+                                </div>
+                                <span class="header__line"></span>
+                                <div class="header__block">
+                                    <span class="header__time">12:00</span>
+                                    <p class="header__name">Вылет из аэропорта
+                                        Ташкента</p>
+                                </div>
+                                <span class="header__line"></span>
+                                <div class="header__block">
+                                    <span class="header__time">12:00</span>
+                                    <p class="header__name">Вылет из аэропорта
+                                        Ташкента</p>
+                                </div>
+                            </div>
+                            <div class="tour__content">
+                                <div class="tour__slider swiper">
+                                    <div class="swiper-wrapper">
+                                        <div class="swiper-slide">
+                                            <img src="./img/tour-slide.jpg" alt="img">
+                                        </div>
+                                        <div class="swiper-slide">
+                                            <img src="./img/tour-slide.jpg" alt="img">
+                                        </div>
+                                        <div class="swiper-slide">
+                                            <img src="./img/tour-slide.jpg" alt="img">
+                                        </div>
+                                        <div class="swiper-slide">
+                                            <img src="./img/tour-slide.jpg" alt="img">
+                                        </div>
+                                        <div class="swiper-slide">
+                                            <img src="./img/tour-slide.jpg" alt="img">
+                                        </div>
+                                    </div>
+                                    <div class="tour__nav">
+                                        <div class="tour__prev"><img src="./img/svg/tour-prev.svg" alt="prev"></div>
+                                        <div class="tour__pagination"></div>
+                                        <div class="tour__next"><img src="./img/svg/tour-next.svg" alt="next"></div>
+                                    </div>
+                                </div>
+                                <div class="tour__text">
+                                    Вылет из Ташкента рейсом HY335 (Uzbekistan Airways) в указанное время на
+                                    ваучере-авиабилете.
+                                    Время вылета из Ташкента в Джидда Время вылета и прилета предварительно
+                                    <ul>
+                                        <li>8 Декабря, из Ташкента 18:50. Прилет в Джидда 22:20</li>
+                                        <li>15 Декабря, из Ташкента 18:50. Прилет в Джидда 22:20</li>
+                                        <li>22 Декабря, из Ташкента 18:50. Прилет в Джидда 22:20</li>
+                                        <li>29 Декабря, из Ташкента 18:50. Прилет в Джидда 22:20</li>
+                                    </ul>
+                                    Прилет в город Джидда. Встреча в аэропорту. Трансфер в город Медину (6 часов), по
+                                    дороге
+                                    каждому паломнику будет
+                                    предоставлен ланч бокс. Заселение в отель BOSPHORUS GRAND AL SAFI 4* на базе 2-х
+                                    разового
+                                    питания завтраки и ужины.
+                                    <ul>
+                                        <li>Современный отель</li>
+                                        <li>300м от Масджид ан-Набави "Мечеть Пророка"</li>
+                                        <li>2-х разовое питание</li>
+                                        <li>Шаговая доступность от достопримечательностей</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="present wow animate__animated animate__fadeIn">
+            <div class="container">
+                <div class="present__wrap">
+                    <h2 class="title present__title">Каждый участник тура,
+                        получит <span>памятные подарки
+                            и атрибуты священных мест</span></h2>
+                    <div class="present__block">
+                        <img src="./img/svg/present.svg" alt="present">
+                        <p class="present__name">Подарки
+                            и сувениры</p>
+                        <span class="present__descr">памятные отрибуты
+                            для каждого</span>
+                    </div>
+                    <div class="present__block">
+                        <img src="./img/svg/present.svg" alt="present">
+                        <p class="present__name">Подарки
+                            и сувениры</p>
+                        <span class="present__descr">памятные отрибуты
+                            для каждого</span>
+                    </div>
+                    <div class="present__block">
+                        <img src="./img/svg/present.svg" alt="present">
+                        <p class="present__name">Подарки
+                            и сувениры</p>
+                        <span class="present__descr">памятные отрибуты
+                            для каждого</span>
+                    </div>
+                    <div class="present__block">
+                        <img src="./img/svg/present.svg" alt="present">
+                        <p class="present__name">Подарки
+                            и сувениры</p>
+                        <span class="present__descr">памятные отрибуты
+                            для каждого</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="booking wow animate__animated animate__bounceIn">
+            <div class="container">
+                <div class="booking__wrap">
+                    <p class="booking__title">Забронируйте тур сейчас!</p>
+                    <div class="item__bottom booking__block">
+                        <a href="#" class="item__program">12.12.2012 – 14.12.2012</a>
+                        <div class="price__block">
+                            <span class="item__day">2 дня</span>
+                            <p class="item__price"><span>$ 1 800</span>/чел</p>
+                        </div>
+                        <button class="item__btn btn">Забронировать</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <footer class="footer">
+            <div class="container">
+                <div class="footer__wrap">
+                    <div class="footer__row contact__row">
+                        <div class="footer__block">
+                            <p class="footer__title">Бронирование и информация</p>
+                            <a class="footer__link" href="tel:84950000000">8 495 000 00 00</a>
+                        </div>
+                        <div class="footer__block">
+                            <p class="footer__title">Почта</p>
+                            <a class="footer__link" href="mailto:info@centralasia.travel">info@centralasia.travel</a>
+                        </div>
+                        <div class="footer__block">
+                            <p class="footer__title">Адрес</p>
+                            <span>Tashkent, Узбекистан</span>
+                            <p class="footer__link">ул. Узбекистон, д. 55</p>
+                        </div>
+                        <div class="footer__block">
+                            <p class="footer__title">Соц.сети</p>
+                            <div class="footer__social">
+                                <a href="#"><img src="./img/svg/fb.svg" alt="fb"></a>
+                                <a href="#"><img src="./img/svg/inst.svg" alt="inst"></a>
+                                <a href="#"><img src="./img/svg/teleg.svg" alt="teleg"></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="line"></div>
+                    <div class="footer__row office__row">
+                        <div class="footer__block">
+                            <p class="footer__title">Офисы продаж</p>
+                            <div class="footer__office">
+                                <div class="office__item">
+                                    <p class="office__name">🇺🇿 Ташкент</p>
+                                    <div class="office__block">
+                                        <img class="office__icon" src="./img/svg/phone.svg" alt="phone">
+                                        <a class="office__link" href="tel:+74950000000">+7 495 000 00 00</a>
+                                    </div>
+                                    <div class="office__block">
+                                        <img class="office__icon" src="./img/svg/location.svg" alt="location">
+                                        <p class="office__link">ул. Узбекистон, д. 55</p>
+                                    </div>
+                                </div>
+                                <div class="office__item">
+                                    <p class="office__name">🇺🇿 Ташкент</p>
+                                    <div class="office__block">
+                                        <img class="office__icon" src="./img/svg/phone.svg" alt="phone">
+                                        <a class="office__link" href="tel:+74950000000">+7 495 000 00 00</a>
+                                    </div>
+                                    <div class="office__block">
+                                        <img class="office__icon" src="./img/svg/location.svg" alt="location">
+                                        <p class="office__link">ул. Узбекистон, д. 55</p>
+                                    </div>
+                                </div>
+                                <div class="office__item">
+                                    <p class="office__name">🇺🇿 Ташкент</p>
+                                    <div class="office__block">
+                                        <img class="office__icon" src="./img/svg/phone.svg" alt="phone">
+                                        <a class="office__link" href="tel:+74950000000">+7 495 000 00 00</a>
+                                    </div>
+                                    <div class="office__block">
+                                        <img class="office__icon" src="./img/svg/location.svg" alt="location">
+                                        <p class="office__link">ул. Узбекистон, д. 55</p>
+                                    </div>
+                                </div>
+                                <div class="office__item">
+                                    <p class="office__name">🇺🇿 Ташкент</p>
+                                    <div class="office__block">
+                                        <img class="office__icon" src="./img/svg/phone.svg" alt="phone">
+                                        <a class="office__link" href="tel:+74950000000">+7 495 000 00 00</a>
+                                    </div>
+                                    <div class="office__block">
+                                        <img class="office__icon" src="./img/svg/location.svg" alt="location">
+                                        <p class="office__link">ул. Узбекистон, д. 55</p>
+                                    </div>
+                                </div>
+                                <div class="office__item">
+                                    <p class="office__name">🇺🇿 Ташкент</p>
+                                    <div class="office__block">
+                                        <img class="office__icon" src="./img/svg/phone.svg" alt="phone">
+                                        <a class="office__link" href="tel:+74950000000">+7 495 000 00 00</a>
+                                    </div>
+                                    <div class="office__block">
+                                        <img class="office__icon" src="./img/svg/location.svg" alt="location">
+                                        <p class="office__link">ул. Узбекистон, д. 55</p>
+                                    </div>
+                                </div>
+                                <div class="office__item">
+                                    <p class="office__name">🇺🇿 Ташкент</p>
+                                    <div class="office__block">
+                                        <img class="office__icon" src="./img/svg/phone.svg" alt="phone">
+                                        <a class="office__link" href="tel:+74950000000">+7 495 000 00 00</a>
+                                    </div>
+                                    <div class="office__block">
+                                        <img class="office__icon" src="./img/svg/location.svg" alt="location">
+                                        <p class="office__link">ул. Узбекистон, д. 55</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="line"></div>
+                    <div class="footer__row flex">
+                        <span class="footer__original">© 2023 - central-asia.travel</span>
+                        <a class="footer__logo" href="/"><img src="./img/svg/footer-logo.svg" alt="logo"></a>
+                        <div class="footer__document">
+                            <a href="#">Договор офферты</a>
+                            <a href="#">Реквизиты</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </footer>
+
+        <script src="https://unpkg.com/@popperjs/core@2"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.js"
+            integrity="sha512-Rd5Gf5A6chsunOJte+gKWyECMqkG8MgBYD1u80LOOJBfl6ka9CtatRrD4P0P5Q5V/z/ecvOCSYC8tLoWNrCpPg=="
+            crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+        <script src="./js/main.js"></script>
+        <script>
+            try {
+                new WOW().init();
+            } catch (error) {
+                console.log(error);
+            }
+        </script>
+    </body>
+
+</html>

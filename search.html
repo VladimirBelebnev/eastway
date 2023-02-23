@@ -1,0 +1,1026 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="./css/main.css">
+        <title>Eastway</title>
+    </head>
+
+    <body>
+        <header class="header">
+            <div class="container">
+                <div class="header__wrap flex">
+                    <a class="header__logo" href="/">
+                        <img src="./img//svg/logo-1.svg" alt="logo">
+                    </a>
+                    <ul class="header__nav flex">
+                        <li class="header__link">
+                            <a href="#">Туры</a>
+                        </li>
+                        <li class="header__link">
+                            <a href="#">О компании</a>
+                        </li>
+                        <li class="header__link">
+                            <a href="#">Вакансии</a>
+                        </li>
+                        <li class="header__link">
+                            <a href="#">Офисы продаж</a>
+                        </li>
+                        <li class="header__link">
+                            <a href="#">Блог</a>
+                        </li>
+                    </ul>
+                    <div class="header__contact flex">
+                        <div class="header__lang flex">
+                            <a class="lang__item active" href="./">RU</a>
+                            <span>/</span>
+                            <a class="lang__item" href="/">UZ</a>
+                        </div>
+                        <span class="header__line"></span>
+                        <div class="contact__block">
+                            <a class="phone" href="tel:84950000000">8 495 000 00 00</a>
+                            <a class="mail" href="mailto:info@centralasia.travel">info@centralasia.travel</a>
+                        </div>
+                        <div class="header__social">
+                            <a href="./">
+                                <img src="./img/svg/telegram.svg" alt="telegram">
+                            </a>
+                            <a href="./">
+                                <img src="./img/svg/whatsApp.svg" alt="whatsApp">
+                            </a>
+                        </div>
+                    </div>
+                    <button class="burger">
+                        <span class="burger-line top-line"></span>
+                        <span class="burger-line mid-line"></span>
+                        <span class="burger-line bottom-line"></span>
+                    </button>
+                </div>
+            </div>
+        </header>
+
+        <div class="mobile-menu flex hidden">
+            <ul class="header__nav flex mobile-nav">
+                <li class="header__link">
+                    <a href="#">Туры</a>
+                </li>
+                <li class="header__link">
+                    <a href="#">О компании</a>
+                </li>
+                <li class="header__link">
+                    <a href="#">Вакансии</a>
+                </li>
+                <li class="header__link">
+                    <a href="#">Офисы продаж</a>
+                </li>
+                <li class="header__link">
+                    <a href="#">Блог</a>
+                </li>
+            </ul>
+            <div class="contact__block">
+                <a class="phone" href="tel:84950000000">8 495 000 00 00</a>
+                <a class="mail" href="mailto:info@centralasia.travel">info@centralasia.travel</a>
+            </div>
+            <div class="header__social">
+                <a href="./">
+                    <img src="./img/svg/telegram.svg" alt="telegram">
+                    <img src="./img/svg/whatsApp.svg" alt="whatsApp">
+                </a>
+            </div>
+        </div>
+
+        <section class="hero"
+            style="background: url('./img/main-hero.jpg'); background-repeat: no-repeat; background-size: 100% 100%;">
+            <div class="container">
+                <div class="hero__wrap search-section__wrap">
+                    <div class="search">
+                        <div class="search__block">
+                            <span>Откуда</span>
+                            <div class="search__select">
+                                <input aria-describedby="tooltip" id="from" type="text" value="Ташкент">
+                                <img class="from-btn" src="./img/svg/arrow-down.svg" alt="arrow">
+                            </div>
+                            <ul role="tooltip" id="from-tooltip" class="tooltip hidden">
+                                <li><span class="city">Ташкент</span> <span class="country">• Узбекистан</span></li>
+                                <li><span class="city">Самарканда</span> <span class="country">• Узбекистан</span></li>
+                                <li><span class="city">Ташкент</span> <span class="country">• Узбекистан</span></li>
+                                <li><span class="city">Самарканда</span> <span class="country">• Узбекистан</span></li>
+                                <li><span class="city">Ташкент</span> <span class="country">• Узбекистан</span></li>
+                            </ul>
+                        </div>
+                        <div class="search__block">
+                            <span>Куда</span>
+                            <div class="search__select">
+                                <input id="to" type="text" value="Самарканда">
+                                <img class="to-btn" src="./img/svg/arrow-down.svg" alt="arrow">
+                            </div>
+                            <ul role="tooltip" id="to-tooltip" class="tooltip hidden">
+                                <li><span class="city">Самарканда</span> <span class="country">• Узбекистан</span></li>
+                                <li><span class="city">Ташкент</span> <span class="country">• Узбекистан</span></li>
+                                <li><span class="city">Самарканда</span> <span class="country">• Узбекистан</span></li>
+                                <li><span class="city">Ташкент</span> <span class="country">• Узбекистан</span></li>
+                                <li><span class="city">Самарканда</span> <span class="country">• Узбекистан</span></li>
+                            </ul>
+                        </div>
+                        <div class="search__block">
+                            <span>Даты</span>
+                            <div class="date__block">
+                                <div class="search__select">
+                                    <img class="color__icon" src="./img/svg/date.svg" alt="date icon">
+                                    <input id="from-date" readonly class="icon__padding" type="text"
+                                        placeholder="Выберите дату">
+                                </div>
+                                <div class="search__select">
+                                    <img class="color__icon" src="./img/svg/date.svg" alt="date icon">
+                                    <input id="to-date" readonly class="icon__padding" type="text"
+                                        placeholder="Выберите дату">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="search__block">
+                            <span>Пассажиры</span>
+                            <div class="search__select">
+                                <span>
+                                    <img class="color__icon" src="./img/svg/person.svg" alt="person icon">
+                                    <input id="pass" class="icon__padding person__padding" type="text" readonly
+                                        value="1">
+                                </span>
+                                <img class="pass-btn" src="./img/svg/arrow-down.svg" alt="arrow">
+                            </div>
+                            <div role="tooltip" id="pass-tooltip" class="tooltip pass hidden">
+                                <div class="pass__block">
+                                    <p class="pass__name">Взрослые</p>
+                                    <span>Старше 12 лет</span>
+                                    <div class="pass__count flex">
+                                        <button class="minus"><img src="./img/svg/minus.svg" alt="minus"></button>
+                                        <span class="pass__num">1</span>
+                                        <button class="plus"><img src="./img/svg/plus.svg" alt="plus"></button>
+                                    </div>
+                                </div>
+                                <div class="pass__block">
+                                    <p class="pass__name">Дети</p>
+                                    <span>От 2 до 12 лет</span>
+                                    <div class="pass__count flex">
+                                        <button class="minus"><img src="./img/svg/minus.svg" alt="minus"></button>
+                                        <span class="pass__num">0</span>
+                                        <button class="plus"><img src="./img/svg/plus.svg" alt="plus"></button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <button class="search__btn btn">Найти туры</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <div class="search-section__title">
+            <div class="container">
+                <!-- Поиск -->
+                <div class="search-section__block">
+                    <h2 class="title">Из Ташкента</h2>
+                </div>
+                <!-- Результаты поиска -->
+                <!-- <div class="search-section__block">
+                    <h2 class="title">Результат поиска</h2>
+                    <span>Найдено 21 путевка</span>
+                </div> -->
+            </div>
+        </div>
+
+        <section class="description">
+            <div class="container">
+                <div class="description__wrap">
+                    <div class="item">
+                        <div class="offer__wrap"
+                            style="background: url('../img/offer-item.jpg'); background-repeat: no-repeat; background-size: 100% 100%; border-radius: 10px; padding: 15px;">
+                            <div class="item__content">
+                                <div class="item__header">
+                                    <div class="item__cities">
+                                        <span>Ташкент</span>
+                                        <img src="./img/svg/two-arrow.svg" alt="arrows">
+                                        <span>Джидда</span>
+                                    </div>
+                                    <p class="item__days">Осталось 5 дней</p>
+                                </div>
+                                <div class="item__benefits">
+                                    <div class="item__benefit">
+                                        <img src="./img/svg/hot-1.svg" alt="benefits">
+                                        <span>Перелет туда и обратно</span>
+                                    </div>
+                                    <div class="item__benefit">
+                                        <img src="./img/svg/hot-2.svg" alt="benefits">
+                                        <span>Виза и страховка</span>
+                                    </div>
+                                    <div class="item__benefit">
+                                        <img src="./img/svg/hot-3.svg" alt="benefits">
+                                        <span>Отель 5 звезд</span>
+                                    </div>
+                                    <div class="item__benefit">
+                                        <img src="./img/svg/hot-4.svg" alt="benefits">
+                                        <span>Трех разовое питание</span>
+                                    </div>
+                                    <div class="item__benefit">
+                                        <img src="./img/svg/hot-5.svg" alt="benefits">
+                                        <span>Групповой гид, с опытом</span>
+                                    </div>
+                                    <div class="item__benefit">
+                                        <img src="./img/svg/hot-6.svg" alt="benefits">
+                                        <span>Вода «Зам-Зам»</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="description__block">
+                        <h2 class="title">Описание тура</h2>
+                        <p class="description__descr">Lorem ipsum dolor sit amet consectetur. Malesuada vulputate enim
+                            curabitur sit. Amet pretium ultrices amet nisl. Massa
+                            egestas eget dignissim mattis urna feugiat eleifend ipsum nunc. Sed euismod leo sed sit
+                            malesuada integer. Amet semper
+                            libero turpis aliquam tellus eget.
+                            Gravida consectetur donec habitasse viverra erat aliquam eu at. A scelerisque eu nulla
+                            pretium. Justo a amet vitae
+                            egestas sit neque duis nulla. Sagittis eu pellentesque ipsum egestas sed nec ullamcorper.
+                            Egestas ridiculus placerat
+                            pulvinar condimentum ut consequat massa.</p>
+                        <div class="item__bottom">
+                            <a href="#" class="item__program">12.12.2012 – 14.12.2012</a>
+                            <div class="price__block">
+                                <span class="item__day">2 дня</span>
+                                <p class="item__price"><span>$ 1 800</span>/чел</p>
+                            </div>
+                            <button class="item__btn btn">Забронировать</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="description">
+            <div class="container">
+                <div class="description__wrap">
+                    <div class="item">
+                        <div class="offer__wrap"
+                            style="background: url('../img/offer-item.jpg'); background-repeat: no-repeat; background-size: 100% 100%; border-radius: 10px; padding: 15px;">
+                            <div class="item__content">
+                                <div class="item__header">
+                                    <div class="item__cities">
+                                        <span>Ташкент</span>
+                                        <img src="./img/svg/two-arrow.svg" alt="arrows">
+                                        <span>Джидда</span>
+                                    </div>
+                                    <p class="item__days">Осталось 5 дней</p>
+                                </div>
+                                <div class="item__benefits">
+                                    <div class="item__benefit">
+                                        <img src="./img/svg/hot-1.svg" alt="benefits">
+                                        <span>Перелет туда и обратно</span>
+                                    </div>
+                                    <div class="item__benefit">
+                                        <img src="./img/svg/hot-2.svg" alt="benefits">
+                                        <span>Виза и страховка</span>
+                                    </div>
+                                    <div class="item__benefit">
+                                        <img src="./img/svg/hot-3.svg" alt="benefits">
+                                        <span>Отель 5 звезд</span>
+                                    </div>
+                                    <div class="item__benefit">
+                                        <img src="./img/svg/hot-4.svg" alt="benefits">
+                                        <span>Трех разовое питание</span>
+                                    </div>
+                                    <div class="item__benefit">
+                                        <img src="./img/svg/hot-5.svg" alt="benefits">
+                                        <span>Групповой гид, с опытом</span>
+                                    </div>
+                                    <div class="item__benefit">
+                                        <img src="./img/svg/hot-6.svg" alt="benefits">
+                                        <span>Вода «Зам-Зам»</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="description__block">
+                        <h2 class="title">Описание тура</h2>
+                        <p class="description__descr">Lorem ipsum dolor sit amet consectetur. Malesuada vulputate enim
+                            curabitur sit. Amet pretium ultrices amet nisl. Massa
+                            egestas eget dignissim mattis urna feugiat eleifend ipsum nunc. Sed euismod leo sed sit
+                            malesuada integer. Amet semper
+                            libero turpis aliquam tellus eget.
+                            Gravida consectetur donec habitasse viverra erat aliquam eu at. A scelerisque eu nulla
+                            pretium. Justo a amet vitae
+                            egestas sit neque duis nulla. Sagittis eu pellentesque ipsum egestas sed nec ullamcorper.
+                            Egestas ridiculus placerat
+                            pulvinar condimentum ut consequat massa.</p>
+                        <div class="item__bottom">
+                            <a href="#" class="item__program">12.12.2012 – 14.12.2012</a>
+                            <div class="price__block">
+                                <span class="item__day">2 дня</span>
+                                <p class="item__price"><span>$ 1 800</span>/чел</p>
+                            </div>
+                            <button class="item__btn btn">Забронировать</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="description">
+            <div class="container">
+                <div class="description__wrap">
+                    <div class="item">
+                        <div class="offer__wrap"
+                            style="background: url('../img/offer-item.jpg'); background-repeat: no-repeat; background-size: 100% 100%; border-radius: 10px; padding: 15px;">
+                            <div class="item__content">
+                                <div class="item__header">
+                                    <div class="item__cities">
+                                        <span>Ташкент</span>
+                                        <img src="./img/svg/two-arrow.svg" alt="arrows">
+                                        <span>Джидда</span>
+                                    </div>
+                                    <p class="item__days">Осталось 5 дней</p>
+                                </div>
+                                <div class="item__benefits">
+                                    <div class="item__benefit">
+                                        <img src="./img/svg/hot-1.svg" alt="benefits">
+                                        <span>Перелет туда и обратно</span>
+                                    </div>
+                                    <div class="item__benefit">
+                                        <img src="./img/svg/hot-2.svg" alt="benefits">
+                                        <span>Виза и страховка</span>
+                                    </div>
+                                    <div class="item__benefit">
+                                        <img src="./img/svg/hot-3.svg" alt="benefits">
+                                        <span>Отель 5 звезд</span>
+                                    </div>
+                                    <div class="item__benefit">
+                                        <img src="./img/svg/hot-4.svg" alt="benefits">
+                                        <span>Трех разовое питание</span>
+                                    </div>
+                                    <div class="item__benefit">
+                                        <img src="./img/svg/hot-5.svg" alt="benefits">
+                                        <span>Групповой гид, с опытом</span>
+                                    </div>
+                                    <div class="item__benefit">
+                                        <img src="./img/svg/hot-6.svg" alt="benefits">
+                                        <span>Вода «Зам-Зам»</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="description__block">
+                        <h2 class="title">Описание тура</h2>
+                        <p class="description__descr">Lorem ipsum dolor sit amet consectetur. Malesuada vulputate enim
+                            curabitur sit. Amet pretium ultrices amet nisl. Massa
+                            egestas eget dignissim mattis urna feugiat eleifend ipsum nunc. Sed euismod leo sed sit
+                            malesuada integer. Amet semper
+                            libero turpis aliquam tellus eget.
+                            Gravida consectetur donec habitasse viverra erat aliquam eu at. A scelerisque eu nulla
+                            pretium. Justo a amet vitae
+                            egestas sit neque duis nulla. Sagittis eu pellentesque ipsum egestas sed nec ullamcorper.
+                            Egestas ridiculus placerat
+                            pulvinar condimentum ut consequat massa.</p>
+                        <div class="item__bottom">
+                            <a href="#" class="item__program">12.12.2012 – 14.12.2012</a>
+                            <div class="price__block">
+                                <span class="item__day">2 дня</span>
+                                <p class="item__price"><span>$ 1 800</span>/чел</p>
+                            </div>
+                            <button class="item__btn btn">Забронировать</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="description">
+            <div class="container">
+                <div class="description__wrap">
+                    <div class="item">
+                        <div class="offer__wrap"
+                            style="background: url('../img/offer-item.jpg'); background-repeat: no-repeat; background-size: 100% 100%; border-radius: 10px; padding: 15px;">
+                            <div class="item__content">
+                                <div class="item__header">
+                                    <div class="item__cities">
+                                        <span>Ташкент</span>
+                                        <img src="./img/svg/two-arrow.svg" alt="arrows">
+                                        <span>Джидда</span>
+                                    </div>
+                                    <p class="item__days">Осталось 5 дней</p>
+                                </div>
+                                <div class="item__benefits">
+                                    <div class="item__benefit">
+                                        <img src="./img/svg/hot-1.svg" alt="benefits">
+                                        <span>Перелет туда и обратно</span>
+                                    </div>
+                                    <div class="item__benefit">
+                                        <img src="./img/svg/hot-2.svg" alt="benefits">
+                                        <span>Виза и страховка</span>
+                                    </div>
+                                    <div class="item__benefit">
+                                        <img src="./img/svg/hot-3.svg" alt="benefits">
+                                        <span>Отель 5 звезд</span>
+                                    </div>
+                                    <div class="item__benefit">
+                                        <img src="./img/svg/hot-4.svg" alt="benefits">
+                                        <span>Трех разовое питание</span>
+                                    </div>
+                                    <div class="item__benefit">
+                                        <img src="./img/svg/hot-5.svg" alt="benefits">
+                                        <span>Групповой гид, с опытом</span>
+                                    </div>
+                                    <div class="item__benefit">
+                                        <img src="./img/svg/hot-6.svg" alt="benefits">
+                                        <span>Вода «Зам-Зам»</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="description__block">
+                        <h2 class="title">Описание тура</h2>
+                        <p class="description__descr">Lorem ipsum dolor sit amet consectetur. Malesuada vulputate enim
+                            curabitur sit. Amet pretium ultrices amet nisl. Massa
+                            egestas eget dignissim mattis urna feugiat eleifend ipsum nunc. Sed euismod leo sed sit
+                            malesuada integer. Amet semper
+                            libero turpis aliquam tellus eget.
+                            Gravida consectetur donec habitasse viverra erat aliquam eu at. A scelerisque eu nulla
+                            pretium. Justo a amet vitae
+                            egestas sit neque duis nulla. Sagittis eu pellentesque ipsum egestas sed nec ullamcorper.
+                            Egestas ridiculus placerat
+                            pulvinar condimentum ut consequat massa.</p>
+                        <div class="item__bottom">
+                            <a href="#" class="item__program">12.12.2012 – 14.12.2012</a>
+                            <div class="price__block">
+                                <span class="item__day">2 дня</span>
+                                <p class="item__price"><span>$ 1 800</span>/чел</p>
+                            </div>
+                            <button class="item__btn btn">Забронировать</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="description">
+            <div class="container">
+                <div class="description__wrap">
+                    <div class="item">
+                        <div class="offer__wrap"
+                            style="background: url('../img/offer-item.jpg'); background-repeat: no-repeat; background-size: 100% 100%; border-radius: 10px; padding: 15px;">
+                            <div class="item__content">
+                                <div class="item__header">
+                                    <div class="item__cities">
+                                        <span>Ташкент</span>
+                                        <img src="./img/svg/two-arrow.svg" alt="arrows">
+                                        <span>Джидда</span>
+                                    </div>
+                                    <p class="item__days">Осталось 5 дней</p>
+                                </div>
+                                <div class="item__benefits">
+                                    <div class="item__benefit">
+                                        <img src="./img/svg/hot-1.svg" alt="benefits">
+                                        <span>Перелет туда и обратно</span>
+                                    </div>
+                                    <div class="item__benefit">
+                                        <img src="./img/svg/hot-2.svg" alt="benefits">
+                                        <span>Виза и страховка</span>
+                                    </div>
+                                    <div class="item__benefit">
+                                        <img src="./img/svg/hot-3.svg" alt="benefits">
+                                        <span>Отель 5 звезд</span>
+                                    </div>
+                                    <div class="item__benefit">
+                                        <img src="./img/svg/hot-4.svg" alt="benefits">
+                                        <span>Трех разовое питание</span>
+                                    </div>
+                                    <div class="item__benefit">
+                                        <img src="./img/svg/hot-5.svg" alt="benefits">
+                                        <span>Групповой гид, с опытом</span>
+                                    </div>
+                                    <div class="item__benefit">
+                                        <img src="./img/svg/hot-6.svg" alt="benefits">
+                                        <span>Вода «Зам-Зам»</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="description__block">
+                        <h2 class="title">Описание тура</h2>
+                        <p class="description__descr">Lorem ipsum dolor sit amet consectetur. Malesuada vulputate enim
+                            curabitur sit. Amet pretium ultrices amet nisl. Massa
+                            egestas eget dignissim mattis urna feugiat eleifend ipsum nunc. Sed euismod leo sed sit
+                            malesuada integer. Amet semper
+                            libero turpis aliquam tellus eget.
+                            Gravida consectetur donec habitasse viverra erat aliquam eu at. A scelerisque eu nulla
+                            pretium. Justo a amet vitae
+                            egestas sit neque duis nulla. Sagittis eu pellentesque ipsum egestas sed nec ullamcorper.
+                            Egestas ridiculus placerat
+                            pulvinar condimentum ut consequat massa.</p>
+                        <div class="item__bottom">
+                            <a href="#" class="item__program">12.12.2012 – 14.12.2012</a>
+                            <div class="price__block">
+                                <span class="item__day">2 дня</span>
+                                <p class="item__price"><span>$ 1 800</span>/чел</p>
+                            </div>
+                            <button class="item__btn btn">Забронировать</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="description">
+            <div class="container">
+                <div class="description__wrap">
+                    <div class="item">
+                        <div class="offer__wrap"
+                            style="background: url('../img/offer-item.jpg'); background-repeat: no-repeat; background-size: 100% 100%; border-radius: 10px; padding: 15px;">
+                            <div class="item__content">
+                                <div class="item__header">
+                                    <div class="item__cities">
+                                        <span>Ташкент</span>
+                                        <img src="./img/svg/two-arrow.svg" alt="arrows">
+                                        <span>Джидда</span>
+                                    </div>
+                                    <p class="item__days">Осталось 5 дней</p>
+                                </div>
+                                <div class="item__benefits">
+                                    <div class="item__benefit">
+                                        <img src="./img/svg/hot-1.svg" alt="benefits">
+                                        <span>Перелет туда и обратно</span>
+                                    </div>
+                                    <div class="item__benefit">
+                                        <img src="./img/svg/hot-2.svg" alt="benefits">
+                                        <span>Виза и страховка</span>
+                                    </div>
+                                    <div class="item__benefit">
+                                        <img src="./img/svg/hot-3.svg" alt="benefits">
+                                        <span>Отель 5 звезд</span>
+                                    </div>
+                                    <div class="item__benefit">
+                                        <img src="./img/svg/hot-4.svg" alt="benefits">
+                                        <span>Трех разовое питание</span>
+                                    </div>
+                                    <div class="item__benefit">
+                                        <img src="./img/svg/hot-5.svg" alt="benefits">
+                                        <span>Групповой гид, с опытом</span>
+                                    </div>
+                                    <div class="item__benefit">
+                                        <img src="./img/svg/hot-6.svg" alt="benefits">
+                                        <span>Вода «Зам-Зам»</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="description__block">
+                        <h2 class="title">Описание тура</h2>
+                        <p class="description__descr">Lorem ipsum dolor sit amet consectetur. Malesuada vulputate enim
+                            curabitur sit. Amet pretium ultrices amet nisl. Massa
+                            egestas eget dignissim mattis urna feugiat eleifend ipsum nunc. Sed euismod leo sed sit
+                            malesuada integer. Amet semper
+                            libero turpis aliquam tellus eget.
+                            Gravida consectetur donec habitasse viverra erat aliquam eu at. A scelerisque eu nulla
+                            pretium. Justo a amet vitae
+                            egestas sit neque duis nulla. Sagittis eu pellentesque ipsum egestas sed nec ullamcorper.
+                            Egestas ridiculus placerat
+                            pulvinar condimentum ut consequat massa.</p>
+                        <div class="item__bottom">
+                            <a href="#" class="item__program">12.12.2012 – 14.12.2012</a>
+                            <div class="price__block">
+                                <span class="item__day">2 дня</span>
+                                <p class="item__price"><span>$ 1 800</span>/чел</p>
+                            </div>
+                            <button class="item__btn btn">Забронировать</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="description">
+            <div class="container">
+                <div class="description__wrap">
+                    <div class="item">
+                        <div class="offer__wrap"
+                            style="background: url('../img/offer-item.jpg'); background-repeat: no-repeat; background-size: 100% 100%; border-radius: 10px; padding: 15px;">
+                            <div class="item__content">
+                                <div class="item__header">
+                                    <div class="item__cities">
+                                        <span>Ташкент</span>
+                                        <img src="./img/svg/two-arrow.svg" alt="arrows">
+                                        <span>Джидда</span>
+                                    </div>
+                                    <p class="item__days">Осталось 5 дней</p>
+                                </div>
+                                <div class="item__benefits">
+                                    <div class="item__benefit">
+                                        <img src="./img/svg/hot-1.svg" alt="benefits">
+                                        <span>Перелет туда и обратно</span>
+                                    </div>
+                                    <div class="item__benefit">
+                                        <img src="./img/svg/hot-2.svg" alt="benefits">
+                                        <span>Виза и страховка</span>
+                                    </div>
+                                    <div class="item__benefit">
+                                        <img src="./img/svg/hot-3.svg" alt="benefits">
+                                        <span>Отель 5 звезд</span>
+                                    </div>
+                                    <div class="item__benefit">
+                                        <img src="./img/svg/hot-4.svg" alt="benefits">
+                                        <span>Трех разовое питание</span>
+                                    </div>
+                                    <div class="item__benefit">
+                                        <img src="./img/svg/hot-5.svg" alt="benefits">
+                                        <span>Групповой гид, с опытом</span>
+                                    </div>
+                                    <div class="item__benefit">
+                                        <img src="./img/svg/hot-6.svg" alt="benefits">
+                                        <span>Вода «Зам-Зам»</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="description__block">
+                        <h2 class="title">Описание тура</h2>
+                        <p class="description__descr">Lorem ipsum dolor sit amet consectetur. Malesuada vulputate enim
+                            curabitur sit. Amet pretium ultrices amet nisl. Massa
+                            egestas eget dignissim mattis urna feugiat eleifend ipsum nunc. Sed euismod leo sed sit
+                            malesuada integer. Amet semper
+                            libero turpis aliquam tellus eget.
+                            Gravida consectetur donec habitasse viverra erat aliquam eu at. A scelerisque eu nulla
+                            pretium. Justo a amet vitae
+                            egestas sit neque duis nulla. Sagittis eu pellentesque ipsum egestas sed nec ullamcorper.
+                            Egestas ridiculus placerat
+                            pulvinar condimentum ut consequat massa.</p>
+                        <div class="item__bottom">
+                            <a href="#" class="item__program">12.12.2012 – 14.12.2012</a>
+                            <div class="price__block">
+                                <span class="item__day">2 дня</span>
+                                <p class="item__price"><span>$ 1 800</span>/чел</p>
+                            </div>
+                            <button class="item__btn btn">Забронировать</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="offer section-search__offer">
+            <div class="container">
+                <div class="offer__wrap">
+                    <div class="offer__header flex">
+                        <h2 class="offer__title title">Горячие предложения</h2>
+                        <a href="#" class="offer__all">Смотреть все <img src="./img/svg/right-arrow.svg"
+                                alt="arrow"></a>
+                    </div>
+                    <div class="offer__grid">
+                        <div class="offer__item item">
+                            <div class="offer__wrap"
+                                style="background: url('../img/offer-item.jpg'); background-repeat: no-repeat; background-size: 100% 100%; border-radius: 10px; padding: 15px;">
+                                <div class="item__content">
+                                    <div class="item__header">
+                                        <div class="item__cities">
+                                            <span>Ташкент</span>
+                                            <img src="./img/svg/two-arrow.svg" alt="arrows">
+                                            <span>Джидда</span>
+                                        </div>
+                                        <p class="item__days">Осталось 5 дней</p>
+                                    </div>
+                                    <div class="item__benefits">
+                                        <div class="item__benefit">
+                                            <img src="./img/svg/hot-1.svg" alt="benefits">
+                                            <span>Перелет туда и обратно</span>
+                                        </div>
+                                        <div class="item__benefit">
+                                            <img src="./img/svg/hot-2.svg" alt="benefits">
+                                            <span>Виза и страховка</span>
+                                        </div>
+                                        <div class="item__benefit">
+                                            <img src="./img/svg/hot-3.svg" alt="benefits">
+                                            <span>Отель 5 звезд</span>
+                                        </div>
+                                        <div class="item__benefit">
+                                            <img src="./img/svg/hot-4.svg" alt="benefits">
+                                            <span>Трех разовое питание</span>
+                                        </div>
+                                        <div class="item__benefit">
+                                            <img src="./img/svg/hot-5.svg" alt="benefits">
+                                            <span>Групповой гид, с опытом</span>
+                                        </div>
+                                        <div class="item__benefit">
+                                            <img src="./img/svg/hot-6.svg" alt="benefits">
+                                            <span>Вода «Зам-Зам»</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="item__bottom">
+                                <a href="#" class="item__program">Подробная программа <img
+                                        src="./img/svg/right-arrow.svg" alt="arrow"></a>
+                                <div class="price__block">
+                                    <span class="item__day">2 дня</span>
+                                    <p class="item__price"><span>$ 1 800</span>/чел</p>
+                                </div>
+                                <button class="item__btn btn">Забронировать</button>
+                            </div>
+                        </div>
+                        <div class="offer__item item">
+                            <div class="offer__wrap"
+                                style="background: url('../img/offer-item.jpg'); background-repeat: no-repeat; background-size: 100% 100%; border-radius: 10px; padding: 15px;">
+                                <div class="item__content">
+                                    <div class="item__header">
+                                        <div class="item__cities">
+                                            <span>Ташкент</span>
+                                            <img src="./img/svg/two-arrow.svg" alt="arrows">
+                                            <span>Джидда</span>
+                                        </div>
+                                        <p class="item__days">Осталось 5 дней</p>
+                                    </div>
+                                    <div class="item__benefits">
+                                        <div class="item__benefit">
+                                            <img src="./img/svg/hot-1.svg" alt="benefits">
+                                            <span>Перелет туда и обратно</span>
+                                        </div>
+                                        <div class="item__benefit">
+                                            <img src="./img/svg/hot-2.svg" alt="benefits">
+                                            <span>Виза и страховка</span>
+                                        </div>
+                                        <div class="item__benefit">
+                                            <img src="./img/svg/hot-3.svg" alt="benefits">
+                                            <span>Отель 5 звезд</span>
+                                        </div>
+                                        <div class="item__benefit">
+                                            <img src="./img/svg/hot-4.svg" alt="benefits">
+                                            <span>Трех разовое питание</span>
+                                        </div>
+                                        <div class="item__benefit">
+                                            <img src="./img/svg/hot-5.svg" alt="benefits">
+                                            <span>Групповой гид, с опытом</span>
+                                        </div>
+                                        <div class="item__benefit">
+                                            <img src="./img/svg/hot-6.svg" alt="benefits">
+                                            <span>Вода «Зам-Зам»</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="item__bottom">
+                                <a href="#" class="item__program">Подробная программа <img
+                                        src="./img/svg/right-arrow.svg" alt="arrow"></a>
+                                <div class="price__block">
+                                    <span class="item__day">2 дня</span>
+                                    <p class="item__price"><span>$ 1 800</span>/чел</p>
+                                </div>
+                                <button class="item__btn btn">Забронировать</button>
+                            </div>
+                        </div>
+                        <div class="offer__item item">
+                            <div class="offer__wrap"
+                                style="background: url('../img/offer-item.jpg'); background-repeat: no-repeat; background-size: 100% 100%; border-radius: 10px; padding: 15px;">
+                                <div class="item__content">
+                                    <div class="item__header">
+                                        <div class="item__cities">
+                                            <span>Ташкент</span>
+                                            <img src="./img/svg/two-arrow.svg" alt="arrows">
+                                            <span>Джидда</span>
+                                        </div>
+                                        <p class="item__days">Осталось 5 дней</p>
+                                    </div>
+                                    <div class="item__benefits">
+                                        <div class="item__benefit">
+                                            <img src="./img/svg/hot-1.svg" alt="benefits">
+                                            <span>Перелет туда и обратно</span>
+                                        </div>
+                                        <div class="item__benefit">
+                                            <img src="./img/svg/hot-2.svg" alt="benefits">
+                                            <span>Виза и страховка</span>
+                                        </div>
+                                        <div class="item__benefit">
+                                            <img src="./img/svg/hot-3.svg" alt="benefits">
+                                            <span>Отель 5 звезд</span>
+                                        </div>
+                                        <div class="item__benefit">
+                                            <img src="./img/svg/hot-4.svg" alt="benefits">
+                                            <span>Трех разовое питание</span>
+                                        </div>
+                                        <div class="item__benefit">
+                                            <img src="./img/svg/hot-5.svg" alt="benefits">
+                                            <span>Групповой гид, с опытом</span>
+                                        </div>
+                                        <div class="item__benefit">
+                                            <img src="./img/svg/hot-6.svg" alt="benefits">
+                                            <span>Вода «Зам-Зам»</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="item__bottom">
+                                <a href="#" class="item__program">Подробная программа <img
+                                        src="./img/svg/right-arrow.svg" alt="arrow"></a>
+                                <div class="price__block">
+                                    <span class="item__day">2 дня</span>
+                                    <p class="item__price"><span>$ 1 800</span>/чел</p>
+                                </div>
+                                <button class="item__btn btn">Забронировать</button>
+                            </div>
+                        </div>
+                        <div class="offer__item item">
+                            <div class="offer__wrap"
+                                style="background: url('../img/offer-item.jpg'); background-repeat: no-repeat; background-size: 100% 100%; border-radius: 10px; padding: 15px;">
+                                <div class="item__content">
+                                    <div class="item__header">
+                                        <div class="item__cities">
+                                            <span>Ташкент</span>
+                                            <img src="./img/svg/two-arrow.svg" alt="arrows">
+                                            <span>Джидда</span>
+                                        </div>
+                                        <p class="item__days">Осталось 5 дней</p>
+                                    </div>
+                                    <div class="item__benefits">
+                                        <div class="item__benefit">
+                                            <img src="./img/svg/hot-1.svg" alt="benefits">
+                                            <span>Перелет туда и обратно</span>
+                                        </div>
+                                        <div class="item__benefit">
+                                            <img src="./img/svg/hot-2.svg" alt="benefits">
+                                            <span>Виза и страховка</span>
+                                        </div>
+                                        <div class="item__benefit">
+                                            <img src="./img/svg/hot-3.svg" alt="benefits">
+                                            <span>Отель 5 звезд</span>
+                                        </div>
+                                        <div class="item__benefit">
+                                            <img src="./img/svg/hot-4.svg" alt="benefits">
+                                            <span>Трех разовое питание</span>
+                                        </div>
+                                        <div class="item__benefit">
+                                            <img src="./img/svg/hot-5.svg" alt="benefits">
+                                            <span>Групповой гид, с опытом</span>
+                                        </div>
+                                        <div class="item__benefit">
+                                            <img src="./img/svg/hot-6.svg" alt="benefits">
+                                            <span>Вода «Зам-Зам»</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="item__bottom">
+                                <a href="#" class="item__program">Подробная программа <img
+                                        src="./img/svg/right-arrow.svg" alt="arrow"></a>
+                                <div class="price__block">
+                                    <span class="item__day">2 дня</span>
+                                    <p class="item__price"><span>$ 1 800</span>/чел</p>
+                                </div>
+                                <button class="item__btn btn">Забронировать</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <div class="benefit-tour">
+            <div class="container">
+                <div class="benefit-tour__wrap flex">
+                    <div class="benefit-tour__block">
+                        <h2 class="title">Самые выгодные предложния
+                            на туры вместе с Central Asia</h2>
+                        <p class="benefit-tour__descr">Lorem ipsum dolor sit amet consectetur. Molestie aliquam
+                            adipiscing faucibus risus. Amet volutpat nullam sed tristique
+                            amet sem bibendum dui. Scelerisque elementum duis duis a in ut nisi duis velit. Dui lacus
+                            metus proin at augue egestas
+                            tellus donec.</p>
+                        <button class="benefit-tour__btn btn">Узнать больше</button>
+                    </div>
+                    <img class="benefit-tour__img" src="./img/benefit-img.png" alt="img">
+                </div>
+            </div>
+        </div>
+
+        <footer class="footer">
+            <div class="container">
+                <div class="footer__wrap">
+                    <div class="footer__row contact__row">
+                        <div class="footer__block">
+                            <p class="footer__title">Бронирование и информация</p>
+                            <a class="footer__link" href="tel:84950000000">8 495 000 00 00</a>
+                        </div>
+                        <div class="footer__block">
+                            <p class="footer__title">Почта</p>
+                            <a class="footer__link" href="mailto:info@centralasia.travel">info@centralasia.travel</a>
+                        </div>
+                        <div class="footer__block">
+                            <p class="footer__title">Адрес</p>
+                            <span>Tashkent, Узбекистан</span>
+                            <p class="footer__link">ул. Узбекистон, д. 55</p>
+                        </div>
+                        <div class="footer__block">
+                            <p class="footer__title">Соц.сети</p>
+                            <div class="footer__social">
+                                <a href="#"><img src="./img/svg/fb.svg" alt="fb"></a>
+                                <a href="#"><img src="./img/svg/inst.svg" alt="inst"></a>
+                                <a href="#"><img src="./img/svg/teleg.svg" alt="teleg"></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="line"></div>
+                    <div class="footer__row office__row">
+                        <div class="footer__block">
+                            <p class="footer__title">Офисы продаж</p>
+                            <div class="footer__office">
+                                <div class="office__item">
+                                    <p class="office__name">🇺🇿 Ташкент</p>
+                                    <div class="office__block">
+                                        <img class="office__icon" src="./img/svg/phone.svg" alt="phone">
+                                        <a class="office__link" href="tel:+74950000000">+7 495 000 00 00</a>
+                                    </div>
+                                    <div class="office__block">
+                                        <img class="office__icon" src="./img/svg/location.svg" alt="location">
+                                        <p class="office__link">ул. Узбекистон, д. 55</p>
+                                    </div>
+                                </div>
+                                <div class="office__item">
+                                    <p class="office__name">🇺🇿 Ташкент</p>
+                                    <div class="office__block">
+                                        <img class="office__icon" src="./img/svg/phone.svg" alt="phone">
+                                        <a class="office__link" href="tel:+74950000000">+7 495 000 00 00</a>
+                                    </div>
+                                    <div class="office__block">
+                                        <img class="office__icon" src="./img/svg/location.svg" alt="location">
+                                        <p class="office__link">ул. Узбекистон, д. 55</p>
+                                    </div>
+                                </div>
+                                <div class="office__item">
+                                    <p class="office__name">🇺🇿 Ташкент</p>
+                                    <div class="office__block">
+                                        <img class="office__icon" src="./img/svg/phone.svg" alt="phone">
+                                        <a class="office__link" href="tel:+74950000000">+7 495 000 00 00</a>
+                                    </div>
+                                    <div class="office__block">
+                                        <img class="office__icon" src="./img/svg/location.svg" alt="location">
+                                        <p class="office__link">ул. Узбекистон, д. 55</p>
+                                    </div>
+                                </div>
+                                <div class="office__item">
+                                    <p class="office__name">🇺🇿 Ташкент</p>
+                                    <div class="office__block">
+                                        <img class="office__icon" src="./img/svg/phone.svg" alt="phone">
+                                        <a class="office__link" href="tel:+74950000000">+7 495 000 00 00</a>
+                                    </div>
+                                    <div class="office__block">
+                                        <img class="office__icon" src="./img/svg/location.svg" alt="location">
+                                        <p class="office__link">ул. Узбекистон, д. 55</p>
+                                    </div>
+                                </div>
+                                <div class="office__item">
+                                    <p class="office__name">🇺🇿 Ташкент</p>
+                                    <div class="office__block">
+                                        <img class="office__icon" src="./img/svg/phone.svg" alt="phone">
+                                        <a class="office__link" href="tel:+74950000000">+7 495 000 00 00</a>
+                                    </div>
+                                    <div class="office__block">
+                                        <img class="office__icon" src="./img/svg/location.svg" alt="location">
+                                        <p class="office__link">ул. Узбекистон, д. 55</p>
+                                    </div>
+                                </div>
+                                <div class="office__item">
+                                    <p class="office__name">🇺🇿 Ташкент</p>
+                                    <div class="office__block">
+                                        <img class="office__icon" src="./img/svg/phone.svg" alt="phone">
+                                        <a class="office__link" href="tel:+74950000000">+7 495 000 00 00</a>
+                                    </div>
+                                    <div class="office__block">
+                                        <img class="office__icon" src="./img/svg/location.svg" alt="location">
+                                        <p class="office__link">ул. Узбекистон, д. 55</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="line"></div>
+                    <div class="footer__row flex">
+                        <span class="footer__original">© 2023 - central-asia.travel</span>
+                        <a class="footer__logo" href="/"><img src="./img/svg/footer-logo.svg" alt="logo"></a>
+                        <div class="footer__document">
+                            <a href="#">Договор офферты</a>
+                            <a href="#">Реквизиты</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </footer>
+
+        <script src="https://unpkg.com/@popperjs/core@2"></script>
+        <script src="./js/main.js"></script>
+    </body>
+
+</html>
